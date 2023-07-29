@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /shopping-cart
+    context-path: /shopping-cart-service
   error:
     include-stacktrace: never
   port: 8085
