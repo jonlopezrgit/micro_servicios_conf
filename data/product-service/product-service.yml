@@ -1,4 +1,6 @@
 server:
+  servlet:
+    context-path: /product
   error:
     include-stacktrace: never
   port: 8084
