@@ -1,5 +1,5 @@
 jwt:
-  token: "${JWT_SECRET_TOKEN}"
+  token: ${JWT_SECRET_KEY}
 server:
   servlet:
     context-path: /auth-service
