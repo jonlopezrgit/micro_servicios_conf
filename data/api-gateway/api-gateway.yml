@@ -17,13 +17,19 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/user-service/**
+          filters:
+            - AuthFilter
         #product
         - id: product-service
           uri: lb://product-service
           predicates:
             - Path=/product-service/**
+          filters:
+            - AuthFilter
         #shopping-cart
         - id: shopping-cart-service
           uri: lb://shopping-cart-service
           predicates:
             - Path=/shopping-cart-service/**
+          filters:
+            - AuthFilter
