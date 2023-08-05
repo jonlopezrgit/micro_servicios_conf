@@ -1,9 +1,9 @@
+jwt:
+  token: ${JWT_SECRET_TOKEN}
 server:
   servlet:
     context-path: /auth-service
   port: 8086
-jwt:
-  token: 
 eureka:
   instance:
     prefer-ip-address: true
