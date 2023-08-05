@@ -33,3 +33,10 @@ spring:
             - Path=/shopping-cart-service/**
           filters:
             - AuthFilter
+        #auth
+        - id: auth-service
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth-service/**
+          filters:
+            - AuthFilter
